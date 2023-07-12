@@ -11,6 +11,7 @@ use Yii;
 use CHtml;
 use LimeExpressionManager;
 use Survey;
+use Question;
 use SurveyDynamic;
 use CDbCriteria;
 use Permission;
@@ -65,7 +66,7 @@ class leastFilledStatFunctions
         // get all answer codes then getcount on all of them
         $aAnswersFilled=array();
         
-        $countFunctions = new countFunctions();
+        $countFunctions = new \statFunctions\countFunctions();
         
         foreach($oQuestion->answers as $key => $value) {
             $aAnswersFilled[$value['code']]=$countFunctions->statCountIf($qCode,$value['code'],$submitted,$self);
