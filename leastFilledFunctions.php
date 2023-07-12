@@ -40,8 +40,8 @@ class leastFilledFunctions extends PluginBase
                 '\leastFilledFunctions\leastFilledStatFunctions::statLF',
                 null, // No javascript function : set as static function
                 $this->gT("Return the least filled response"), // Description for admin
-                'string statCountLF(QuestionCode.sgqa[, submitted = true][, self = true])', // Extra description
-                'https://manual.limesurvey.org/StatFunctions', // Help url
+                'string statLF(QuestionCode.sgqa[, submitted = true][, self = true])', // Extra description
+                'https://github.com/adamzammit/leastFilledFunctions', // Help url
                 1, 2, 3 // Number of arguments : 2 , 3 or 4
             ),
         );
