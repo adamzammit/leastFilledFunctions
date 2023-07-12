@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <metadata>
+        <name>leastFilledFunctions</name>
+        <type>plugin</type>
+        <creationDate>2023-07-12</creationDate>
+        <last_update>2023-07-12</last_update>
+        <author>Adam Zammit, ACSPRI</author>
+        <authorUrl>https://www.acspri.org.au</authorUrl>
+        <version>0.0.1</version>
+        <license>GNU General Public License version 2 or later</license>
+        <description><![CDATA[New functions for expression manager to return least filled response. Relies on statFunctions plugin : <ul>
+            <li>statLF(QuestionCode.sgqa[, submitted = true][, self = true])</li>
+            </ul>
+]]></description>
+    </metadata>
+
+    <compatibility>
+        <version>6.0</version>
+        <version>5.0</version>
+        <version>4.0</version>
+    </compatibility>
+
+    <updaters disabled="disabled">
+    </updaters>
+</config>
